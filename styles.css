@@ -1,0 +1,292 @@
+body{
+    background-color: hsl(0, 0%, 98%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+.dropdowncontent1{
+    display: inline;
+    position: absolute;
+    background-color:  white;
+    left: -20%;
+    top: 80%;
+    /* display: none; */
+    border-radius: 10px;
+    box-shadow: -5px 20px 30px hsla(0, 0%, 8%, 70%);
+    padding: 1rem;
+}
+.hidden{
+    display: none;
+}
+.dropdowncontent1 li{
+    margin-bottom: 1rem;
+    margin-left: -3rem;
+    padding-right: 1rem;
+    margin-right: -1rem;
+}
+.dropdowncontent1 img{
+    margin-right: 1rem;
+    padding-left: 1rem;
+}
+.dropdowncontent2{
+    display: inline;
+    position: absolute;
+    box-shadow: -5px 20px 20px hsla(0, 0%, 8%, 70%);
+    background-color:  white;
+    left: 55%;
+    top: 80%;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.hidden2{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.dropdowncontent2 li{
+    margin-bottom: 1rem;
+    margin-left: -3rem;
+    padding-right: 1rem;
+    margin-right: -1rem;
+}
+.dropdowncontent2 img{
+    margin-right: 1rem;
+    padding-left: 1rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: hsl(0, 0%, 41%);
+}
+.one{
+    display: flex;
+}
+.two{
+    margin-top: -0.5rem;
+}
+.nav{
+    display: flex;
+    margin: 0 1rem;
+    flex-wrap: wrap;
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+a:hover{
+    color: hsl(0, 0%, 8%);
+}
+li{
+    margin: 0 1rem;
+    list-style: none;
+}
+a{
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+.dropdown{
+    display: flex;
+    position: relative;
+    color: hsl(0, 0%, 41%);
+}
+button:hover{
+    color: hsl(0, 0%, 8%);
+}
+.container{
+    display: flex;
+    width: 80%;
+    margin: 5rem auto;
+}
+.main{
+    width: 50%;
+}
+.image{
+    width: 50%;
+}
+h1{
+    margin-top: 8rem;
+    font-size: 60px;
+}
+.main p{
+    line-height: 1.5;
+    width: 60%;
+    margin-bottom: 2rem;
+    color: hsl(0, 0%, 41%);
+}
+.learn{
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid;
+    margin-top: 1rem;
+    margin-bottom: 12rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:  hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+}
+.learn:hover{
+    background-color: hsl(0, 0%, 98%);
+    color:  hsl(0, 0%, 8%);;
+}
+.register{
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: 1px solid;
+    font-weight: bold;
+    cursor: pointer;
+    color:  hsl(0, 0%, 41%);
+}
+.partners{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+.career{
+    display: flex;
+}
+.mobile{
+    display: none;
+}
+@media (max-width:750px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        font-family: 'Epilogue', sans-serif;
+    }
+    .dropdown{
+        display: none;
+    }
+    .career{
+        display: none;
+    }
+    .two{
+        display: none;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .mobile{
+        display: block;
+    }
+    .image{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-top:1rem;
+    }
+    br{
+        display: none;
+    }
+    h1{
+        width: 100vw;
+        font-size: 150%;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .partners img{
+        width: 20%;
+    }
+    .partners{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width:90vw;
+        padding: 1.2rem;
+    }
+    .main p{
+        line-height: 1.5;
+        width: 90vw;
+        padding: 1.2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: hsl(0, 0%, 41%);
+    }
+    .learn{
+        display: flex;
+        margin-left: 60%;
+        margin-top: 2rem;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    
+    }
+    button, a{
+        display: block;
+    }
+    .about{
+        position: absolute;
+        top: 5rem;
+        left: 9.7rem;
+        padding-left: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        height: 100%;
+    }
+    .close{
+        position: absolute;
+        top: 2rem;
+        left: 11rem;
+        cursor: pointer;
+    }
+    .car{
+        margin-bottom: 1rem;
+    }
+    .login{
+        position: absolute;
+        top: 7rem;
+        left: 14rem;
+        margin-top: 5rem;
+        padding-left: 1rem;
+        height: 100%;
+    }
+    .log{
+        margin-left: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .register{
+        width: 150px;
+        margin-left: -3rem;
+    }
+    .drop{
+        position: absolute;
+        top: -2rem;
+        left: 9.7rem;
+        padding: 1rem;
+        padding-top: 5rem;
+        height: 100%;
+        background-color: white;
+        border-radius: 10px;
+        width: 55%;
+    }
+    .mobilemenu1{
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    .dropmobile1{
+        position: absolute;
+        top: 7rem;
+    }
+    .dropmobile2{
+        position: absolute;
+        line-height: 1.5;
+        top: 9rem;
+        top: 20rem;
+    }
+}
